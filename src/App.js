@@ -1,14 +1,18 @@
 import './App.css';
-import Appbar from './Components/Appbar/Appbar';
-import Mainboard from './Components/main/Mainboard';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Dashboard from './Components/Dashboard';
+import Uploadpage from './Components/Uploadpage';
 
 function App() {
   return (
-    <div className="App">
-      <Appbar/>
-      <Mainboard/>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Uploadpage/>} />
+          <Route path="/dashboard" element={<Dashboard/>} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
