@@ -9,11 +9,12 @@
     flex-direction: row;
     position: relative;
     float: left;
-    height: 300px;
-    width: 500px;
+    height: 350px;
+    width: 450px;
     background-color: #2c2a3a;
     border-radius: 20px;
     transition: all .3s ease-in-out;
+    padding-left: 50px;
 }
 
 .box1:hover {
@@ -27,6 +28,7 @@
     color: #41B06E;
     font-size: 30px;
     margin-top: 22px;
+    margin-left: -30px;
 }
 
 .box1-details {
@@ -40,10 +42,11 @@
     font-weight: 400;
     color: #41B06E;
     margin-top: 20px;
+    margin-left: -30px;
 }
 
 .box1-details h1 {
-    margin-left: 50px;
+    margin-left: 20px;
     margin-top: -38px;
     color: white;
     font-family: "Poppins", sans-serif;
@@ -73,6 +76,7 @@
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 1px;
+    margin-left: 10px;
 }
 
 .scrollable-menu {
@@ -85,7 +89,7 @@
 
 .scrollable-menu li {
     text-align: center;
-    padding: 10px 0 0 170px;
+    padding: 10px 0 0 110px;
     color: white;
     font-family: "Poppins", sans-serif;
     font-size: 20px;
@@ -97,11 +101,13 @@
     flex-direction: row;
     position: relative;
     float: left;
-    height: 300px;
-    width: 750px;
+    height: 500px;
+    width: 1170px;
     background-color: #2c2a3a;
     border-radius: 20px;
     transition: all .3s ease-in-out;
+    margin-top: 20px;
+    margin-left: 16px;
 }
 
 .box2:hover {
@@ -140,8 +146,8 @@
     flex-direction: row;
     position: relative;
     float: left;
-    height: 450px;
-    width: 400px;
+    height: 650px;
+    width: 580px;
     background-color: #2c2a3a;
     border-radius: 20px;
     transition: all .3s ease-in-out;
@@ -178,15 +184,32 @@
     font-family: "Poppins", sans-serif;
     font-size: 20px;
     font-weight: 400;
+    margin-left: 70px;
+}
+.scrollable-menu2 {
+    max-height: 150px;
+    overflow-y: visible;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.scrollable-menu2 li {
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 50px;
 }
 .box4 {
     margin: 20px;
+    margin-top: 0px;
     display: flex;
     flex-direction: row;
     position: relative;
     float: left;
-    height: 450px;
-    width: 950px;
+    height: 560px;
+    width: 1150px;
     background-color: #2c2a3a;
     border-radius: 20px;
     transition: all .3s ease-in-out;
@@ -214,8 +237,139 @@
     transform: scale(1.05);
     transition: all .3s ease-in-out;
 }
-
-
+.box6
+{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    float: left;
+    height: 350px;
+    width: 600px;
+    background-color: #2c2a3a;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;   
+}
+.box6:hover {
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+}
+.box6details{
+    margin-top: -75px;
+    margin-left: 150px;
+}
+.box6details p
+{
+    margin-top: -30px;
+    margin-left: -80px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+}
+.icon6
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    font-weight: 400;
+    color: #41B06E;
+    margin-top: 100px; 
+    margin-left: -130px;
+}
+.piechart
+{
+    margin-top: -30px;
+}
+.box7
+{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    float: left;
+    height: 200px;
+    width: 1350px;
+    background-color: #2c2a3a;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;   
+}
+.box7-details p
+{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+}
+.box8
+{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    float: left;
+    height: 400px;
+    width: 580px;
+    background-color: #2c2a3a;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;  
+    margin-top: -420px; 
+}
+.box8:hover {
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+}
+.box9{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    float: left;
+    height: 400px;
+    width: 580px;
+    background-color: #2c2a3a;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;  
+    margin-top: 20px; 
+}
+.box9:hover {
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+}
+.box10{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    float: left;
+    height: 400px;
+    width: 580px;
+    background-color: #2c2a3a;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;  
+    margin-top: 20px; 
+}
+.box10:hover {
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+}
+.box11{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    float: left;
+    height: 400px;
+    width: 550px;
+    background-color: #2c2a3a;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;  
+    margin-top: 20px; 
+}
+.box11:hover {
+    transform: scale(1.05);
+    transition: all .3s ease-in-out;
+}
 @media (max-width: 768px) {
     .box1 {
         flex-direction: column; 
