@@ -5,10 +5,11 @@ import { useExcelData } from '../ExcelDataContent';
 import Chart from 'chart.js/auto';
 import { FaChartPie } from "react-icons/fa";
 import WiderLineChart from './WiderLineChart ';
-import Bag_graph from './Baggraph';
+import BagGraph from './Baggraph';
 import './Mainboard.css'
 
 const MainboardContent = ({ excelData }) => {
+    const bagData = excelData.map(item => ({ "DATE": item["DATE"], "No of Bags": item["No of Bags"] }));
     const uniqueCountries = new Set(excelData.map(item => item["Origin Country"]));
     const supplierCounts = {};
     excelData.forEach(item => {
@@ -259,6 +260,7 @@ const MainboardContent = ({ excelData }) => {
                     datasets: [{
                         label: 'Description Distribution',
                         data: descriptionData,
+                        color:'white',
                         backgroundColor: [
                             'rgba(255, 99, 132, 0.6)',
                             'rgba(54, 162, 235, 0.6)',
@@ -275,7 +277,7 @@ const MainboardContent = ({ excelData }) => {
                     plugins: {
                         title: {
                             display: true,
-                            
+                            color:'white'
                         },
                     },
                 },
@@ -374,7 +376,7 @@ const MainboardContent = ({ excelData }) => {
                     <div className="icon3"><BsGraphUpArrow /></div>
                     <h1>No of Bag Supplied</h1>
                     <div className="weightgraph">
-                        <Bag_graph/>
+                        <BagGraph bagData={bagData} />
                     </div>
                 </div>
             </div>
@@ -383,7 +385,7 @@ const MainboardContent = ({ excelData }) => {
                     <div className="box6details">
                         <div className="icon6"><FaChartPie /></div>
                         <p>Customs clearance lead Time chart</p>
-                        <canvas ref={chartRefLeadTime} className='piechart' style={{ width: '350px', height: '350px',marginLeft:'-50px' }}/>
+                        <canvas ref={chartRefLeadTime} className='piechart' style={{ width: '350px', height: '350px',marginLeft:'-50px' , color:'white'}}/>
                     </div>
                 </div>
             )}
@@ -436,7 +438,9 @@ const Mainboard = () => {
     return (
         <div>
             {excelData && <MainboardContent excelData={excelData} />}
-            {!excelData && <div>No data available</div>}
+            {!excelData && <div className='no-data'><img src="image-removebg-preview.png" alt="" />
+            <h1>No data found</h1>
+                </div>}
         </div>
     );
 };
