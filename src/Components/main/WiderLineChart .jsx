@@ -3,11 +3,11 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 
 const WiderLineChart = ({ data }) => {
   return (
-    <div style={{ width: '1100px', margin: 'auto' }}>
+    <div style={{ width: '1700px', margin: 'auto' }}>
       <ResponsiveContainer width="100%" height={400}>
         <LineChart data={data}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="BOE Date" />
+          <XAxis/>
           <YAxis label={{ value: 'Gross weight', angle: -90, position: 'insideLeft' }} />
           <Tooltip />
           <Legend />
